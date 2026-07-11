@@ -89,9 +89,8 @@
 #include <Arduino.h>
 #include <WiFi.h>
 #include <WebServer.h>
+#include<SECRET.h>
 
-const char* ssid = "AkiraCHix";
-const char* password = "Akirachix@2011";
 
 WebServer server(80);
 
@@ -119,7 +118,7 @@ void setup() {
     Serial.begin(115200);
     
     
-    WiFi.begin(ssid, password);
+    WiFi.begin(Akirachix, akirachix@2011);
     Serial.print("Connecting to WiFi");
     while (WiFi.status() != WL_CONNECTED) {
         delay(500);
